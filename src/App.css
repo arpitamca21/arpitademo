@@ -1,0 +1,47 @@
+.App {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-columns: 1fr 10px 1fr;
+  grid-template-areas:
+    "name name name"
+    "dleft g dright"
+    ". . .";
+  gap: normal;
+}
+
+.Gap {
+  grid-area: g;
+  background-color: black;
+}
+
+.Name {
+  grid-area: name;
+  background-color: black;
+  color: white;
+  font-size: xx-large;
+}
+
+.DLeft {
+  grid-area: dleft;
+  border: solid;
+  border-width: 10px;
+  border-color: black;
+  padding: 2em;
+  padding-top: 10em;
+  margin: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.DRight {
+  grid-area: dright;
+  border: solid;
+  border-width: 10px;
+  border-color: black;
+  padding: 2em;
+  padding-top: 10em;
+  margin: 2em;
+  text-align: center;
+  font-weight: bold;
+}
